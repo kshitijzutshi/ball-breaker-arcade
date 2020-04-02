@@ -65,6 +65,7 @@ function movePaddle() {
   } else if (leftArrow && paddle.x > 0) {
     paddle.x -= paddle.dx;
   }
+
 }
 
 function draw() {
@@ -87,3 +88,4 @@ function loop() {
 }
 
 loop();
+
