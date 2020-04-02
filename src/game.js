@@ -65,18 +65,6 @@ function movePaddle() {
   } else if (leftArrow && paddle.x > 0) {
     paddle.x -= paddle.dx;
   }
-
-  // this.position.x += this.speed;
-
-  // if (rightArrow) {
-  //   paddle.x += paddle.dx;
-  //   if (paddle.x + paddle.width > cvs.width)
-  //     paddle.x = cvs.width - paddle.width;
-  //   else if (leftArrow) {
-  //     paddle.x -= paddle.dx;
-  //     if (paddle.x < 0) paddle.x = 0;
-  //   }
-  // }
 }
 
 function draw() {
