@@ -1,3 +1,4 @@
+
 import { BG_IMG } from "/src/component.js";
 
 // Select the canvas
@@ -141,3 +142,4 @@ function loop() {
 }
 
 loop();
+
