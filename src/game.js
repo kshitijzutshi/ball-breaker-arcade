@@ -3,7 +3,7 @@ import { BG_IMG } from "/src/component.js";
 // Select the canvas
 
 const cvs = document.getElementById("breakout");
-
+const dummy = 100;
 const ctx = cvs.getContext("2d");
 
 const PADDLE_WIDTH = 100;
