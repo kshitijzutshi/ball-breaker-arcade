@@ -4,8 +4,60 @@
     <meta charset="UTF-8" />
 
     <title>2D Breakout Game - JavaScript</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Germania+One&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      #sound {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        position: absolute;
+        top: 465px;
+        left: 20px;
+      }
+      #gameover {
+        position: absolute;
+        width: 400px;
+        height: 500px;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+      }
+      #youwon {
+        width: 100px;
+        position: absolute;
+        top: 200px;
+        left: 150px;
+        display: none;
+      }
+      #youlose {
+        width: 400px;
+        position: absolute;
+        top: 100px;
+        left: 0px;
+        display: none;
+      }
+
+      #restart {
+        cursor: pointer;
+        position: absolute;
+        top: 310px;
+        left: 155px;
+        font-size: 1.25em;
+        color: #fff;
+      }
+    </style>
   </head>
   <body>
+    <div class="sound">
+      <img src="/assets/images/SOUND_ON.png" alt="" id="sound" />
+    </div>
+    <div id="gameover">
+      <img src="/assets/images/youwon.png" alt="" id="youwon" />
+      <img src="/assets/images/gameover.png" alt="" id="youlose" />
+      <div id="restart">Play Again!</div>
+    </div>
     <canvas id="breakout" width="400" height="500"> </canvas>
     <script src="src/component.js"></script>
     <script src="src/game.js"></script>
